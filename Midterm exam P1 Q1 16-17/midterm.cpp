@@ -16,6 +16,12 @@ void testExercises();
 void swapArrays(int array1[], int array2[])
 {
 	// TO DO: Insert the code of Ex 1 here
+	int temp;
+	for (int i = 0; i < 5 ; i++) {
+		temp = array1[i];
+		array1[i] = array2[i];
+		array2[i] = temp;
+	}
 }
 
 
@@ -23,7 +29,14 @@ void swapArrays(int array1[], int array2[])
 int sumMultiples(int minimum, int maximum)
 {
 	// TO DO: Insert the code of Ex 2 here
-	return 0;
+	int addition = 0;
+	for (int i = minimum; i <= maximum; i++) {
+		if (((i % 5) == 0) && (((i % 2) != 0) && ((i % 3) != 0))) {
+			addition += i;
+		}
+	}
+	
+	return addition;
 }
 
 
@@ -31,7 +44,20 @@ int sumMultiples(int minimum, int maximum)
 int isPalindrome(char str[])
 {
 	// TO DO: Insert the code of Ex 3 here
-	return 0;
+	int i = 0; 
+
+	while (str[i] != '\0')
+	{
+		i++;
+	}
+
+	for (int j = 0; j <= i; j++) {
+
+		if (str[j] != str[i - 1 - j]) {
+			return 0; 
+		}
+	}
+	return 1;
 }
 
 
@@ -39,7 +65,13 @@ int isPalindrome(char str[])
 int getNumEmptyPotions(byte potions)
 {
 	// TO DO: Insert the code of Ex 4 here
-	return 0;
+	int count = 0; 
+	for (int i = 0; i < 8; i++) {
+		if( (potions&(1<<i)) == 0 ){
+			count++;
+		}
+	}
+	return count;
 }
 
 
