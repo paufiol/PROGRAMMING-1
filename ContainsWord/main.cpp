@@ -11,7 +11,7 @@ int SizeOf(const char* string) {
 
 int containsWord(const char* sentence, const char* word) {
 	int j = 0; 
-	int sizeS = SizeOf(sentence);
+	int sizeS = SizeOf(sentence); // YEETUS THAT FETUS
 	int sizeW = SizeOf(word);
 	for (int i = 0; i < sizeS; i++) {
 		if (sentence[i] == word[j]) {
