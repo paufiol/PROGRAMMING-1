@@ -28,22 +28,27 @@ int containsWord(const char* sentence, const char* word) {
 }
 
 int main() {
+	char sentence[256] = {};
+	char word[64] =   {};
 
-	int num = containsWord("Hello Hen", "Hen");
-	//printf("%d\n", num);
-	int var1 = 255;
-	var1 = var1 | ((1 << 3) | 1);
+	printf("Sentence goes here: ");
+	scanf_s("%[^\n]%*c", sentence, sizeof(sentence)); 
+	
 
-	int var2 = 255; 
-	var2 = var2 ^ ((1 << 3) | (1 << 7));
 
-	int var3 = 255; 
-	var3 = (1 << 5);
 
-	int var4 = 255; 
-	var4 = var4 ^ ((1 << 6) | (1 << 2));
+	printf("word goes here: ");
+	scanf_s("%[^\n]%*c", word, sizeof(word));
+	
+	if (containsWord(sentence, word) == 1) {
+		printf("'%s' esta contenida en '%s'\n", word, sentence);
+	}
+	else {
+		printf("'%s' no esta contenida en '%s'\n", word, sentence);
+	}
+	
 
-	printf("%d\n", var3);
+	
 	system("pause");
 	return 0; 
 }
