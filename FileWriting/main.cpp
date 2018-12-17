@@ -7,16 +7,17 @@
 
 
 int main() {
-	holamundos();
-	readMe(); //ESTE ES CACAS PERO USA fgets()
-	readMe2();
-	
-	HowManyChars();
-	HowManyWords();
+	//holamundos();
+	//readMe(); //ESTE ES CACAS PERO USA fgets()
+	//readMe2();
+	//
+	//HowManyChars();
+	//HowManyWords();
 
-	StoreEnemies();
-	EnemiesArrays();
-	
+	//StoreEnemies();
+	//EnemiesArrays();
+	//merge();
+	BinarySize();
 	system("pause");
 	return 0;
 }

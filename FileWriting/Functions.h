@@ -10,3 +10,5 @@ void HowManyWords();
 void StoreEnemies();
 void EnemiesArrays();
 
+void merge();
+void BinarySize();

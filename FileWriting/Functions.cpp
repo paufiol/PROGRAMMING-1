@@ -121,3 +121,49 @@ void EnemiesArrays() {
 		
 	}
 }
+
+
+void merge() {
+	FILE *A = fopen("Lorem_Ipsum.txt", "r");
+	FILE *B = fopen("Laputadelacabra.txt", "r");
+	FILE *RES = fopen("Merged_File.txt", "w");
+	
+	if  ((A  != nullptr) &&
+		(B	 != nullptr) && 
+		(RES != nullptr)) {
+		
+		char  temp[32] = {};
+		
+		while(fread(temp, sizeof(unsigned char), 1, A) > 0){
+			
+			printf("%s", temp);
+			fwrite(temp, sizeof(unsigned char), 1, RES);
+		
+		}
+		
+		while (fread(temp, sizeof(unsigned char), 1, B) > 0) {
+
+			printf("%s", temp);
+			fwrite(temp, sizeof(unsigned char), 1, RES);
+
+		}
+	}
+	
+	fclose(A);
+	fclose(B);
+	fclose(RES);
+}
+
+void BinarySize(){
+	FILE *file = fopen("Lorem_Ipsum.txt", "rb");
+	int position; 
+	if (file != nullptr) {
+		
+		fseek(file, 0, SEEK_END);
+		position = ftell(file);
+		printf("%d", position);
+
+	}
+
+	fclose(file);
+}
