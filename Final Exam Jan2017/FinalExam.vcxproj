@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{DA110FCA-B291-46E4-8A03-29B65039C32A}</ProjectGuid>
-    <RootNamespace>FinalExamJanuary2017</RootNamespace>
+    <ProjectGuid>{A6E26359-84B9-4145-A297-A45994DFDDDA}</ProjectGuid>
+    <RootNamespace>FinalExam</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -115,6 +115,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Ex1.h" />
+    <ClInclude Include="Ex2.h" />
+    <ClInclude Include="Ex3.h" />
+    <ClInclude Include="SimpleUnitTest.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
