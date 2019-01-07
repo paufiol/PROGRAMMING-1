@@ -328,3 +328,14 @@ ASALocalRun/
 
 # MFractors (Xamarin productivity tool) working folder 
 .mfractor/
+FileWriting/Merged_File.txt
+FileWriting/main.cpp
+FileWriting/Lorem_Ipsum.txt
+FileWriting/Laputadelacabra.txt
+FileWriting/Hello_worlds.txt
+FileWriting/Functions.h
+FileWriting/Functions.cpp
+FileWriting/FileWriting.vcxproj.filters
+FileWriting/FileWriting.vcxproj
+FileWriting/FileWriting.sln
+FileWriting/Enemies.txt
